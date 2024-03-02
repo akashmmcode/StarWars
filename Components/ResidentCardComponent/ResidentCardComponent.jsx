@@ -37,7 +37,7 @@ const ResidentCardComponent = (props) => {
 
   return (
     <ElevatedCard
-      backgroundColor="#01baef"
+      backgroundColor="#0b090a"
       edgeColors={{
         bottom: "#ffd60a",
         right: "#ffd60a",
@@ -46,10 +46,10 @@ const ResidentCardComponent = (props) => {
         width: "300px",
       }}
     >
-      <ContentWrapper>
+      <ContentWrapper style={{ border: "1px solid yellow" }}>
         <Column>
           <div className="name">
-            <Typography {...fontNameSpaces.th16b} color={mainColors.black}>
+            <Typography {...fontNameSpaces.th16b} color={mainColors.red}>
               {name}
             </Typography>
           </div>
@@ -58,7 +58,7 @@ const ResidentCardComponent = (props) => {
             <Typography {...fontNameSpaces.tc12b} color={mainColors.white}>
               Birth Year
             </Typography>
-            <Typography {...fontNameSpaces.th14b} color={mainColors.black}>
+            <Typography {...fontNameSpaces.th14b} color={mainColors.red}>
               {birth_year}
             </Typography>
           </div>
@@ -67,7 +67,7 @@ const ResidentCardComponent = (props) => {
             <Typography {...fontNameSpaces.tc12b} color={mainColors.white}>
               Eye Color
             </Typography>
-            <Typography {...fontNameSpaces.th14b} color={mainColors.black}>
+            <Typography {...fontNameSpaces.th14b} color={mainColors.red}>
               {eye_color}
             </Typography>
           </div>
@@ -76,7 +76,7 @@ const ResidentCardComponent = (props) => {
             <Typography {...fontNameSpaces.tc12b} color={mainColors.white}>
               Gender
             </Typography>
-            <Typography {...fontNameSpaces.th14b} color={mainColors.black}>
+            <Typography {...fontNameSpaces.th14b} color={mainColors.red}>
               {gender}
             </Typography>
           </div>
@@ -85,7 +85,7 @@ const ResidentCardComponent = (props) => {
             <Typography {...fontNameSpaces.tc12b} color={mainColors.white}>
               Skin Color
             </Typography>
-            <Typography {...fontNameSpaces.th14b} color={mainColors.black}>
+            <Typography {...fontNameSpaces.th14b} color={mainColors.red}>
               {skin_color}
             </Typography>
           </div>
@@ -94,7 +94,7 @@ const ResidentCardComponent = (props) => {
             <Typography {...fontNameSpaces.tc12b} color={mainColors.white}>
               Height
             </Typography>
-            <Typography {...fontNameSpaces.th14b} color={mainColors.black}>
+            <Typography {...fontNameSpaces.th14b} color={mainColors.red}>
               {height}
             </Typography>
           </div>
@@ -103,7 +103,7 @@ const ResidentCardComponent = (props) => {
             <Typography {...fontNameSpaces.tc12b} color={mainColors.white}>
               Mass
             </Typography>
-            <Typography {...fontNameSpaces.th14b} color={mainColors.black}>
+            <Typography {...fontNameSpaces.th14b} color={mainColors.red}>
               {mass}
             </Typography>
           </div>
