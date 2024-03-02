@@ -16,7 +16,7 @@ const PaginationComponent = (props) => {
             <Button
               onClick={() => props.setCurrentPage(page)}
               key={index}
-              variant="secondary"
+              variant="primary"
               kind="elevated"
               size="big"
             >
