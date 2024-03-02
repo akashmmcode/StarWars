@@ -1,0 +1,29 @@
+.CardComponent {
+  margin-left: 10px;
+}
+
+.number {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.planet_name {
+  font-size: 25px !important;
+  color: #ffd60a !important;
+}
+
+.rotation_period,
+.climate,
+.gravity,
+.terrain,
+.population {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.resident {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

@@ -1,0 +1,17 @@
+#root {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+.planets_outer_div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.heading {
+  margin-block: 30px;
+}

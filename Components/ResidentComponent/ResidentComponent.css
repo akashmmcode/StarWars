@@ -1,0 +1,7 @@
+.resident_cards_outer_div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
