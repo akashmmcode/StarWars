@@ -1,8 +1,2 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Star Wars Planets Web Application
+Welcome to the Star Wars Planets Web Application repository! This project is an assignment aimed at showcasing planets from the Star Wars universe using the Star Wars API (SWAPI). The goal is to not only display information about each planet but also list its notable residents.
