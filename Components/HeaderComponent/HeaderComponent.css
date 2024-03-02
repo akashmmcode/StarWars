@@ -9,3 +9,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.home {
+  font-size: 20px !important;
+  color: #ffd60a !important;
+}
+
+.home:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,7 @@
+.pagination_button_outer_div {
+  margin-block: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}

@@ -1,11 +1,17 @@
 import "./App.css";
 import React from "react";
-import { CardComponent, ShimmerComponent } from "../Components";
+import {
+  CardComponent,
+  ShimmerComponent,
+  PaginationComponent,
+} from "../Components";
 import { Typography } from "@cred/neopop-web/lib/components";
 import { fontNameSpaces } from "@cred/neopop-web/lib/primitives";
 
 function App() {
   const [planets, SetPlanets] = React.useState([]);
+  const [currentPage, setCurrentPage] = React.useState(1);
+  const [cardsPerPage, setCardsPerPage] = React.useState(3);
 
   React.useEffect(() => {
     getPlanetsList();
@@ -16,6 +22,10 @@ function App() {
     const json = await data.json();
     SetPlanets(json?.results);
   }
+
+  const lastPostIndex = currentPage * cardsPerPage;
+  const firstPostindex = lastPostIndex - cardsPerPage;
+  const currentPosts = planets.slice(firstPostindex, lastPostIndex);
 
   return (
     <>
@@ -30,11 +40,16 @@ function App() {
         </>
       ) : (
         <div className="planets_outer_div">
-          {planets.map((items, index) => {
+          {currentPosts.map((items, index) => {
             return <CardComponent key={items.name} obj={items} count={index} />;
           })}
         </div>
       )}
+      <PaginationComponent
+        totalPosts={planets.length}
+        postsPerPage={cardsPerPage}
+        setCurrentPage={setCurrentPage}
+      />
     </>
   );
 }

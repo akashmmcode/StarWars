@@ -45,6 +45,7 @@ const ResidentComponent = () => {
       </div>
       {resident.length === 0 ? (
         <>
+          <h3>No Residents found</h3>
           <ShimmerComponent />
         </>
       ) : (

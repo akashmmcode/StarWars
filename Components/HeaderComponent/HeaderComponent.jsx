@@ -10,7 +10,7 @@ const HeaderComponent = () => {
     <>
       <div className="header">
         <Link to={"/"}>
-          <Typography {...fontNameSpaces.tc12b} className="planet_name">
+          <Typography {...fontNameSpaces.tc12b} className="home">
             HOME
           </Typography>
         </Link>
