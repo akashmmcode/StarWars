@@ -2,6 +2,11 @@
 
 Welcome to the Star Wars Planets Web Application repository! This project is aimed at showcasing planets from the Star Wars universe using the Star Wars API (SWAPI). The goal is to not only display information about each planet but also list its notable residents.
 
+Access using this link
+```
+https://regal-churros-3ff0b9.netlify.app/
+```
+
 ## Project Overview
 
 This web application utilizes React and Cred UI for frontend development. It integrates with the Star Wars API (SWAPI) to fetch data about planets and their residents dynamically.
