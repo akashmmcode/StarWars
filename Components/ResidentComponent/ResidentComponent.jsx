@@ -16,9 +16,10 @@ const ResidentComponent = () => {
 
   async function getResidentList() {
     let residentlist = [];
-    const data = await fetch("https://swapi.dev/api/planets/?format=json");
+    const data = await fetch("https://swapi.info/api/planets/?format=json");
     const json = await data.json();
-    const residentsAPIS = json?.results[params.id].residents;
+
+    const residentsAPIS = json[params.id].residents;
 
     const residentsData = await Promise.allSettled(
       residentsAPIS.map((residentURL) =>

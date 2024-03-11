@@ -11,17 +11,19 @@ import { fontNameSpaces } from "@cred/neopop-web/lib/primitives";
 function App() {
   const [planets, SetPlanets] = React.useState([]);
   const [currentPage, setCurrentPage] = React.useState(1);
-  const [cardsPerPage, setCardsPerPage] = React.useState(3);
+  const [cardsPerPage, setCardsPerPage] = React.useState(6);
 
   React.useEffect(() => {
     getPlanetsList();
   }, []);
 
   async function getPlanetsList() {
-    const data = await fetch("https://swapi.dev/api/planets/?format=json");
+    const data = await fetch("https://swapi.info/api/planets/?format=json");
     const json = await data.json();
-    SetPlanets(json?.results);
+
+    SetPlanets(json);
   }
+  console.log(planets);
 
   const lastPostIndex = currentPage * cardsPerPage;
   const firstPostindex = lastPostIndex - cardsPerPage;
